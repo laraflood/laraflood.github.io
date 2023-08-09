@@ -1,0 +1,91 @@
+body {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    padding: 16px;
+    display: flex;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.pickDestination {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+span {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 100px;
+}
+
+nav {
+    
+    text-transform: uppercase;
+}
+nav ul {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-inline-start: 0;
+}
+nav li {
+    display: inline;
+    font-size: 14px;
+    padding: 12px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.moons {
+  border: 0px none;
+  height: 190px;
+  width: 190px;
+  left: 0;
+  position: center;
+  top: 0;
+  padding-top: 30px;
+}
+
+
+.rectangle {
+  border: 0px none;
+  height: 2px;
+  overflow-x: hidden;
+  width: 327px;
+  background-color: #373a4b;
+  left: 0;
+  position: center;
+  top: 0;
+}
+.stats {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+.stats h2 {
+    font-size: 14px;
+}
+
+.stats .distanceStat {
+    font-size: 26px;
+    font-family: Bellefair;
+}
+.stats .travelTimeStat {
+    font-size: 26px;
+    font-family: Bellefair;
+}

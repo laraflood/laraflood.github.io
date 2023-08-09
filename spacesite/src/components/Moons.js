@@ -1,8 +1,9 @@
 import React from 'react';
-import './destination-moon.css';
+import './Moons.css';
 import moonImg from '../assets/destination/image-moon.png';
+import {withRouter} from 'react-router';
 
-class Moon extends React.Component {
+class Moon extends React.Component{
     render() {
         return (
             <div className="moon-page">
@@ -36,6 +37,7 @@ class Moon extends React.Component {
             </div>
         );
     }
-}
+};
+
 
 export default Moon;

@@ -2,28 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 import Heading from './components/Heading';
 import HomePage from './components/Home';
-import Moon from './components/destination-moon';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Moon from './components/Moons';
+import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 import List from '@mui/material/List';
 import Hamburger from './components/Hamburger';
+import ReactDOM from "react-dom/client";
+import React from 'react';
 
-function App() {
+export default function App() {
   return (
     <div>
       <Router>
-      <Heading/>
-      <HomePage/>
-        <List/>
-          <Switch>
-            <Route path="/" element={<HomePage/>} >
-              <Route index element={<HomePage/>} />
-              <Route path="destination" element={<Moon/>} />
-            </Route>
-          </Switch>
+        <React.StrictMode>
+          <Heading/>
+          
+            <Switch>
+                <Route index path="/" exact component={withRouter(HomePage)} />
+                <Route path="/destination" exact component={withRouter(Moon)} />
+            </Switch>
+        
+        </React.StrictMode>
       </Router>
     </div>
 
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

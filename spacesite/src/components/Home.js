@@ -4,7 +4,7 @@ import './Home.css';
 class HomePage extends React.Component {
     render() {
         return (
-            <div className="home-page">
+            <div className={'home-page'}>
                 <h1>So, you want to travel to <span>Space</span></h1>
                 
                 <p>Let’s face it; if you want to go to space, you might as well genuinely go to 

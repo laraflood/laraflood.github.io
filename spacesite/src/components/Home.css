@@ -1,3 +1,9 @@
+@media (min-width: 600px) {
+    .element {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
+}
+
 body {
     color: #D0D6F9;
     text-align: center;
@@ -6,6 +12,9 @@ body {
     line-height: normal;
     letter-spacing: 2.7px;
     padding: 16px;
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1 {
     font-size: 16px;
@@ -37,3 +46,4 @@ button {
     letter-spacing: inherit;
     
 }
+
